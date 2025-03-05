@@ -32,6 +32,7 @@ const Navbar = () => {
         <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
         <li><Link to="/lost-found" onClick={closeMenu}>Lost & Found</Link></li>
         <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+        <li><Link to="/sign in" onClick={closeMenu}>Sign In</Link></li>
       </ul>
     </nav>
   );
