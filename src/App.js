@@ -1,11 +1,8 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './Pages/Home';
-// import Adopt from './pages/Adopt';
-// import Services from './pages/Services';
-// import LostFound from './pages/LostFound';
-// import Contact from './pages/Contact';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./Pages/Home";
+import Footer from "./components/Footer"; // ✅ Correctly imported Footer
 
 const App = () => {
   return (
@@ -13,11 +10,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/adopt" element={<Adopt />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/lost-found" element={<LostFound />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        {/* Remove the incorrect Footer route */}
       </Routes>
+      <Footer /> {/* ✅ Place Footer outside of Routes to show on all pages */}
     </Router>
   );
 };

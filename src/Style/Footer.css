@@ -1,0 +1,98 @@
+.footer {
+  background-color: hsl(297, 85%, 82%);
+  color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.footer-links,
+.footer-newsletter {
+  flex: 1;
+  text-align: left;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: rgb(11, 9, 9);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #2719eb;
+}
+
+.footer-newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer-newsletter button {
+  background-color: #8c76dc;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: rgb(14, 1, 1);
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: #cb0957;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.7;
+}
