@@ -1,0 +1,181 @@
+/* src/Style/Services.css */
+
+/* General styling for the services section */
+/* src/Style/Services.css */
+
+/* General styling for the services section */
+.services {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #566609, #b84608);
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading with colorful gradient */
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ffcc00, #0a0004, #ff33cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bounce 2s infinite;
+}
+
+/* Services container with animated fade-in effect */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* Service card styling */
+.service-card {
+  background: linear-gradient(to bottom, leve, #ffe0e0);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect with smooth transition */
+.service-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to bottom, #ffdde1, #fff6b7);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Service icons with animated color change */
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  animation: bounce 1.5s ease-in-out infinite alternate;
+  background: linear-gradient(to right, #ff6600, #ff3399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Text inside service cards with gradient color */
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  background: linear-gradient(to right, #ff0080, #ff6600);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.service-card p {
+  font-size: 1rem;
+  background: linear-gradient(to right, #007bff, #00c9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  animation: slideUp 1.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+
+.service-card {
+  background-color: lavender;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Styling for the image under the heading */
+.services-image-container {
+  margin: 20px 0;
+}
+
+.services-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Styling for the service icons */
+.service-icon {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Bouncing animation for the icons */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Optional: Add hover effect for service cards */
+.service-card:hover .service-icon {
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+/* Styling for the text inside service cards */
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+}

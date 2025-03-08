@@ -2,6 +2,7 @@ import React from "react";
 import "../Style/Home.css";
 import backgroundImage from "../assets/background.webp"; // Ensure the image exists
 import MiddilePage from "../Pages/MiddilePage.jsx";
+// import Petimage from "./petimage.jsx";
 
 const Home = () => {
   return (
@@ -47,18 +48,21 @@ const Home = () => {
               <input type="text" placeholder="Search for pets..." />
               <button>🔍</button>
             </div>
-            <p>Your new best friend is waiting! Browse our adorable pets looking for a loving home.</p>
+            
 
             {/* Button Row */}
             <div className="button-row">
-              <button className="animated-btn">Adopt</button>
+              <button className="animated-btn">Search</button>
+              
             </div>
+            <p>Your new best friend is waiting! Browse our adorable pets looking for a loving home.</p>
           </div>
         </div>
       </div>
 
       {/* Middile Page without Background */}
       <div className="middle-page" style={{ background: "#fff", padding: "20px 0" }}>
+        {/* <Petimage /> */}
         <MiddilePage />
       </div>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./Pages/Home";
+import Services from "./Pages/Services";
 import Footer from "./components/Footer"; // ✅ Correctly imported Footer
 
 const App = () => {
@@ -10,9 +11,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Remove the incorrect Footer route */}
+        <Route path="/services" element={<Services />} /> {/* ✅ Correct placement inside Routes */}
       </Routes>
-      <Footer /> {/* ✅ Place Footer outside of Routes to show on all pages */}
+      <Footer /> {/* ✅ Footer stays outside Routes to show on all pages */}
     </Router>
   );
 };

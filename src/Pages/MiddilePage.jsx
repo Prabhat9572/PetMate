@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../Style/MiddilePage.css"; // Ensure you have a CSS file for styling
+import Petimage from "./petimage";
 
 const MiddilePage = () => {
   const navigate = useNavigate(); // Hook for navigation
@@ -73,6 +74,9 @@ const MiddilePage = () => {
           </div>
         ))}
       </div>
+      
+      {/* Pet Image Section */}
+      <Petimage />
 
       {/* Shop Our Popular Categories Section */}
       <div className="popular-categories">
